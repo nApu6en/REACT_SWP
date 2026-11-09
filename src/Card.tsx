@@ -1,13 +1,17 @@
 import React from "react";
 
-type Props = {}
+type Props = {
+    title: string,
+    text: string,
+    image: string
+};
 
-export default function Card({}: Props) {
+export default function Card({ title, text, image }: Props) {
     return (
        <div className='card'>
-        <h2>Susi</h2>
-        <img src={"https://picsum.photos/200/300"} alt="Hero" />
-        <p>MADE BY DENI BEAST</p>
+        <h2>{title}</h2>
+        <img src={image} alt="Hero" />
+        <p>{text}</p>
       </div>
     )
 }
