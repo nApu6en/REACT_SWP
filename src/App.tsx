@@ -1,11 +1,11 @@
-import { useState } from 'react'
+
 import './App.css'
 import Card from './Card'
-import CardS from '../CardS'
+import CardS from './CardS'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
